@@ -1,0 +1,29 @@
+.new-tweet {
+  background-color: lightgrey;
+  height: 140px;
+  margin: 2em;
+  border-radius: 0.8em;
+  border-width: thin;
+  border-color: black;
+}
+span.counter {
+margin-left: 269px;
+}
+textarea {
+  margin-right: 20px
+  margin: 30px;
+  width: 350px;
+  padding: 4px;
+  border-color: grey;
+}
+h2.new-tweet {
+width: 350px;
+  border-bottom: 1px solid black;
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+button {
+  width: 100px;
+}
