@@ -42,6 +42,7 @@ $(function() {
       data: $(this).serialize(),
       success: function (result) {
         console.log('Success: ', result);
+        $('#text').val(null)
         aquireTweets()
       }
     });
