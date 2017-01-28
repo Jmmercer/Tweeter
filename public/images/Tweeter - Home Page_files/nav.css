@@ -1,0 +1,40 @@
+#nav-bar {
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  height: 85px;
+  color: #e8fdff;
+  background-color: #00a087;
+  }
+
+#nav-bar img.logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 45px;
+    margin-right: 10px;
+    margin-bottom: -15px;
+  }
+
+#nav-bar span.header{
+   font-size: -webkit-xxx-large;
+   font-family: 'Roboto Condensed', sans-serif;
+  }
+
+#composeButton {
+  background-color: lightgrey;
+  border-style: solid black thin;
+  border-color: black;
+  border-radius: 1em;
+  margin: 9px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  height: 60px;
+  width: 140px;
+  float: right;
+  }
+
+#nav-bar img.ink {
+  width: 30px;
+  height: 30px;
+}
