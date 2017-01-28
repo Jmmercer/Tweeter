@@ -1,21 +1,16 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 $(function() {
+
+// Renders to the tweet container the tweets produced from create tweet function in order of newest to oldest.
 
  function renderTweets(tweets) {
   for(tweet of tweets){
     var newTweet = createTweetElement(tweet);
-    $("#tweetContainer").append(newTweet);
+    $("#tweetContainer").prepend(newTweet);
   }
 }
    aquireTweets()
-
+  //appends data taken from forum submission to html as a tweet
    function createTweetElement(tweet){
-     console.log(tweet)
-     console.log(tweet.user)
      let $tweet = $("<article>").addClass("tweet");
      let $h3 = $("<h3 class='handle'>").text(tweet.user.handle);
      let $h2 = $("<h2>").text(tweet.user.name);
@@ -25,17 +20,21 @@ $(function() {
      let $p = $("<p>").text(tweet.content.text);
      let $tweetBody = $("<section>").append($p);
      $tweet.append($tweetBody);
-     let $dateStamp = $('<span class="dateStamp">').text(tweet.created_at);
+     let date = intelligibleDates((Date.now() - tweet.created_at));
+     let $dateStamp = $('<span class="dateStamp">').text(date);
      let $icons = $('.icons');
      let $footer = $("<footer>").append($dateStamp)
      $tweet.append($footer)
       return $tweet;
    }
 
-
+  // tweet submission event handler
   var $button = $('#tweetPost');
   $button.on('click', function (event) {
     event.preventDefault();
+    if (text.value.length > 140){
+      throw err
+    }
     console.log('Button clicked, performing ajax call...');
     $.ajax({
       url: '/tweets/',

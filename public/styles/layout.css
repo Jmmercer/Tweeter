@@ -23,16 +23,12 @@ body {
 }
 main {
   width: 450px;
-  height: 800px;
+  height: auto;
   margin-right: :: 0px auto;
   background-color: white;
   text-align: center;
-  padding-top: 140px;
+  padding-top: 120px;
   margin: inherit;
-
-
-
-
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

@@ -20,10 +20,10 @@
 
 
     <!-- App JS -->
+    <script type="text/javascript" src="/scripts/intelligibleDates.js"></script>
+
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
-
   </head>
 
   <body>
@@ -32,7 +32,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
-      <button id="composeButton" type="button" value="compose">Compose</button>
+      <button id="composeButton" type="button" value="compose"><img class="ink" src="/images/compose.png">Compose;</button>
     </nav>
     <script>
     $("#composeButton").click(function(){
@@ -52,24 +52,6 @@
           </form>
         </section>
         <section id="tweetContainer">
-          <article class="tweet">
-            <header>
-              <img class="avatars" src="/images/avy.jpg">
-              <h3 class="handle"> @theJeffrey</h3>
-              <h2> Jeffrey!</h2>
-            </header>
-          <section class="tweetBody">
-              <p> im a tweet </p>
-            </section>
-            <footer>
-              <section class="icons">
-                <img class="icon" src="/images/Flag.png">
-                <img class="icon" src="/images/like.jpg">
-                <img class="icon" src="/images/share.png">
-            </section>
-              <span class="dateStamp"> 2 days ago </span>
-            </footer>
-          </article>
         </section>
     </main>
   </body>
